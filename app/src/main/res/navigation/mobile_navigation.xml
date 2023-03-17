@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_schools">
+
+    <fragment
+        android:id="@+id/navigation_schools"
+        android:name="com.challenge.nycs_challengejpmc.view.SchoolsFragment"
+        android:label="NYC Schools"
+        tools:layout="@layout/fragment_schools" >
+        <action
+            android:id="@+id/action_navigation_schools_to_navigation_details"
+            app:destination="@id/navigation_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.challenge.nycs_challengejpmc.view.DetailsFragment"
+        android:label="Details NYC Schools"
+        tools:layout="@layout/fragment_details" >
+    </fragment>
+
+</navigation>
